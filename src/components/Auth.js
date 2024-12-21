@@ -7,7 +7,7 @@ export default function Auth() {
     return (
         <div>
             <h1>Click on the checkbox to get authenticated</h1>
-            <p>{check ? "You are now authenticated, you can proceed" : "you are not authenticated"}</p>
+            <p className="authText">{check ? "You are now authenticated, you can proceed" : "you are not authenticated"}</p>
             <input type="checkbox" id="checkbox" value={check} onChange={() => setCheck(!check)} />
             <label htmlFor="checkbox">I'm not a robot</label>
         </div>
